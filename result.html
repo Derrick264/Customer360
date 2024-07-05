@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction / Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #110808;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #f1e9e9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(190, 54, 54, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #170101;
+        }
+        h2 {
+            color: #0b0202;
+            margin-top: 20px;
+        }
+        p {
+            line-height: 1.6;
+            color: #090101;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Results</h1>
+        <p>Information about the customer's cluster classification.</p>
+        <hr>
+        <h2>The Customer belongs to Cluster: <span id="cluster">{{ cluster }}</span></h2>
+        <p id="explanation"> Based on the predicted cluster and its relevant characteristics, the credit card company can modify its business strategies.</p>
+    </div>
+</body>
+</html>
